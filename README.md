@@ -43,6 +43,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{"id": 1, "nome": "RM", "ida
 PATCH
 ```
 curl -X PATCH -H "Content-Type: application/json" -d '{"idade": 29}' http://localhost:3000/id
+```
 
 DELETE
 ```
@@ -50,12 +51,14 @@ curl -X DELETE http://localhost:3000/id
 ```
 
 OPTIONS
+
 ```
 http OPTIONS http://localhost:3000/id
 
 ```
 
 HEAD
+
 ```
 curl -I http://localhost:3000/
 
