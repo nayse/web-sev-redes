@@ -32,32 +32,33 @@ curl http://localhost:3000/
 
 POST
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"id": 1, "nome": "Namjoon", "idade": 29, "funcao": "Vocalista"}' http://localhost:3000/:id
+curl -X POST -H "Content-Type: application/json" -d '{"id": 1, "nome": "Namjoon", "idade": 29, "funcao": "Vocalista"}' http://localhost:3000/id
 ```
 
 PUT
 ```
-curl -X PUT -H "Content-Type: application/json" -d '{"id": 1, "nome": "RM", "idade": 28, "funcao": "Vocalista"}' http://localhost:3000/:id
+curl -X PUT -H "Content-Type: application/json" -d '{"id": 1, "nome": "RM", "idade": 28, "funcao": "Vocalista"}' http://localhost:3000/id
 ```
 
 PATCH
 ```
-curl -X PATCH -H "Content-Type: application/json" -d '{"idade": 29}' http://localhost:3000/:id
-```
+curl -X PATCH -H "Content-Type: application/json" -d '{"idade": 29}' http://localhost:3000/id
 
 DELETE
 ```
-curl -X DELETE http://localhost:3000/:id
+curl -X DELETE http://localhost:3000/id
 ```
 
 OPTIONS
 ```
-curl -X OPTIONS http://localhost:3000/id
+http OPTIONS http://localhost:3000/id
+
 ```
 
 HEAD
 ```
 curl -I http://localhost:3000/
+
 ```
 
 
